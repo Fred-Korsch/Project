@@ -1,24 +1,38 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @customer.name %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @customer.email %>
-</p>
+<h1 class="page-header"><%= @customer.name %></h1>
 
-<p>
+
+<div class="row">
+  <div class="col-md-2 text-right">
+    <strong>Email:</strong>
+  </div>
+  <div class="col-md-8">
+    <%= @customer.email %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-2 text-right">
   <strong>Birthday:</strong>
+  </div>
+  <div class="col-md-8">
   <%= @customer.birthday %>
-</p>
+  </div>
+</div>
 
-<p>
+<div class="row">
+  <div class="col-md-2 text-right">
   <strong>Description:</strong>
+  </div>
+  <div class="col-md-8">
   <%= @customer.description %>
-</p>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<br />
+<div class="row">
+  <div class="col-md-offset-2">
+    <%= link_to 'Edit', edit_customer_path(@customer), class: 'btn btn-primary' %>
+  </div>
+</div>
