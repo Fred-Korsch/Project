@@ -11,24 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, id: :customer_name %>
+    <%= form.text_field :name, id: :customer_name, class: 'form-control', placeholder: 'Name' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :email %>
-    <%= form.text_field :email, id: :customer_email %>
+    <%= form.text_field :email, id: :customer_email, class: 'form-control', placeholder: 'Email' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :birthday %>
-    <%= form.date_select :birthday, id: :customer_birthday %>
+    <%= form.date_select :birthday, id: :customer_birthday , :start_year=>1900 %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description, id: :customer_description %>
+    <%= form.text_area :description, id: :customer_description, class: 'form-control', placeholder: 'Description' %>
   </div>
 
   <div class="actions">
