@@ -31,7 +31,8 @@
     <%= form.text_area :description, id: :customer_description, class: 'form-control', placeholder: 'Description' %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit class: 'btn btn-success' %>
+    <a href="/" class="btn btn-default">Back</a>
   </div>
 <% end %>
