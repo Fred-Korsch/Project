@@ -1,6 +1,6 @@
 # Project
 
-Projeto para cadastro de clientes Indeva.
+Projeto para Cadastro de clientes para avaliação de curso.
 
 ## License
 [MIT](LICENSE)
